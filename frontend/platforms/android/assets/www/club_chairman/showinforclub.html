@@ -1,0 +1,26 @@
+<ons-page ng-controller="ShowclubdetailController">
+      <ons-toolbar>
+        <div class="center">ข้อมูลชมรม</div>
+      </ons-toolbar>
+	<ul class="list">
+  		<li class="list__header">
+  		  ชื่อชมรม
+ 	    </li>
+  		<li class="list__item" ng-bind="datas.name">
+   		 
+  		</li>
+ 	    <li class="list__header">
+    	  เกี่ยวกับชมรม  
+  		</li>
+  		<li class="list__item">
+   		 {{datas.description}}  <button style="color:white ;float: right;background:green" class="button" disabled>แก้ไข</button>
+  		</li>
+ 	    <li class="list__header">
+  	      สถานที่ 
+ 	    </li>
+  		<li class="list__item">
+   		 {{datas.place}}        <button style="color:white ;float: right;background:green" class="button" disabled>แก้ไข</button>
+  		</li>
+	</ul>
+     
+    </ons-page>
