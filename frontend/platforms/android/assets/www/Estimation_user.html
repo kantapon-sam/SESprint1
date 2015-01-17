@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  	<meta charset="utf-8">
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="mobile-web-app-capable" content="yes">
+  	<title>My App</title>  
+  
+  	<link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
+  	<link rel="stylesheet" href="styles/onsen-css-components-blue-basic-theme.css">  
+  	<link rel="stylesheet" href="styles/app.css"/>
+
+  	<script src="lib/onsen/js/angular/angular.js"></script>  
+  	<script src="lib/onsen/js/angular/angular-route.js"></script>  
+  	<script src="lib/onsen/js/onsenui.js"></script>    
+  	<script src="cordova.js"></script>
+</head>
+
+<body>    
+  <ons-page>
+
+	    <ons-toolbar>
+        <div class="center"style= "font-size:19px"><b>การประเมินเจ้าหน้าที่<b/></div>
+        <div class="left">
+          <ons-toolbar-button>
+            <ons-icon icon="ion-navicon" style="font-size: 32px; width: 1em">
+          </ons-toolbar-button>
+        </div>
+      </ons-toolbar>
+	
+	
+      <ons-list>
+      
+      	<ons-list-header></ons-list-header>
+          <ons-list-item><b>1. การแต่งกายของพนักงาน<b/></ons-list-item>
+          
+      <ons-row>
+        <ons-col>
+          	<label class="radio-button">
+  				<input type="radio" name="one">
+  					<div class="radio-button__checkmark"></div>
+  					ดี
+			</label>
+      </ons-col>
+      <ons-col>
+			<label class="radio-button">
+  				<input type="radio" name="one">
+  					<div class="radio-button__checkmark"></div>
+ 					ปานกลาง
+			</label>
+      </ons-col>
+        <ons-col>
+			<label class="radio-button">
+  				<input type="radio" name="one">
+  					<div class="radio-button__checkmark"></div>
+  					พอใช้
+			</label>
+      </ons-col>
+  </ons-row>
+ 		  <ons-list-header></ons-list-header>
+
+		<ons-list-item><b>2. การพูด สื่อสาร ของพนักงาน<b/></ons-list-item>
+			<ons-row>
+        <ons-col>
+            <label class="radio-button">
+          <input type="radio" name="two">
+            <div class="radio-button__checkmark"></div>
+            ดี
+      </label>
+      </ons-col>
+      <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="two">
+            <div class="radio-button__checkmark"></div>
+          ปานกลาง
+      </label>
+      </ons-col>
+        <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="two">
+            <div class="radio-button__checkmark"></div>
+            พอใช้
+      </label>
+      </ons-col>
+  </ons-row>
+ 		<ons-list-header></ons-list-header>
+ 
+        <ons-list-item><b>3. การดูแลของพนักงาน<b/></ons-list-item>
+        	<ons-row>
+        <ons-col>
+            <label class="radio-button">
+          <input type="radio" name="three">
+            <div class="radio-button__checkmark"></div>
+            ดี
+      </label>
+      </ons-col>
+      <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="three">
+            <div class="radio-button__checkmark"></div>
+          ปานกลาง
+      </label>
+      </ons-col>
+        <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="three">
+            <div class="radio-button__checkmark"></div>
+            พอใช้
+      </label>
+      </ons-col>
+  </ons-row>
+ 		<ons-list-header></ons-list-header>
+ 
+ 		<ons-list-item><b>4. การเอาใจใส่ของพนักงาน<b/></ons-list-item>
+        	<ons-row>
+        <ons-col>
+            <label class="radio-button">
+          <input type="radio" name="four">
+            <div class="radio-button__checkmark"></div>
+            ดี
+      </label>
+      </ons-col>
+      <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="four">
+            <div class="radio-button__checkmark"></div>
+          ปานกลาง
+      </label>
+      </ons-col>
+        <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="four">
+            <div class="radio-button__checkmark"></div>
+            พอใช้
+      </label>
+      </ons-col>
+  </ons-row>
+ 		<ons-list-header></ons-list-header>
+ 
+ 		<ons-list-item><b>5. พฤติกรรมของพนักงาน<b/></ons-list-item>
+        	<ons-row>
+        <ons-col>
+            <label class="radio-button">
+          <input type="radio" name="five">
+            <div class="radio-button__checkmark"></div>
+            ดี
+      </label>
+      </ons-col>
+      <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="five">
+            <div class="radio-button__checkmark"></div>
+          ปานกลาง
+      </label>
+      </ons-col>
+        <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="five">
+            <div class="radio-button__checkmark"></div>
+            พอใช้
+      </label>
+      </ons-col>
+  </ons-row>
+ 		<ons-list-header></ons-list-header>
+ 	  </ons-list>
+      <br>
+      	<ons-button modifier="large"><i class="fa fa-check-circle"></i>&nbsp;ตกลง</ons-button>
+      <br>
+      	<ons-button modifier="large--cta"><i class="fa fa-times-circle"></i>&nbsp;ยกเลิก</ons-button><br>
+      <div style ="text-alitn:right">
+      	<span>จำนวนผู้ใช้บริการ =</span>
+      	<span class="notification"> 10</span>
+      </div>
+</ons-page>
+  </ons-navigator>
+
+  
+</ons-page>
+  	
+
+</body>
+</html>

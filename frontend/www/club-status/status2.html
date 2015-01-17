@@ -1,0 +1,13 @@
+  <meta charset="utf-8">
+<ons-page  ng-controller ="PostController">	
+	<ons-toolbar>	
+	<div class="left"><ons-back-button></ons-back-button></div>
+	</ons-toolbar>
+	<ons-list>
+	<ons-list-item class="item" ng-repeat="data in datas">
+	
+	<h>{{data.comment}}</h>
+	
+	</ons-list-item>
+	</ons-list>
+</ons-page>

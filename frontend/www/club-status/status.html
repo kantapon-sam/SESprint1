@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>My App</title>  
+  
+  <link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
+  <link rel="stylesheet" href="lib/onsen/css/onsen-css-components-default.css">    
+  <link rel="stylesheet" href="styles/app.css"/>
+
+  <script src="lib/onsen/js/angular/angular.js"></script>    
+  <script src="lib/onsen/js/onsenui.js"></script>    
+  <script src="js/app.js"></script> 
+  
+</head>
+
+<body>    
+  <ons-navigator title="Page 1" animation="slide" var="navi"> 
+	  <ons-page ng-controller="AddController">
+	  <ons-toolbar>	
+	  <div class="Right"><ons-next-button></ons-next-button></div>
+	  </ons-toolbar>
+	     <br><br>
+	    <div align="center">      
+		
+	    <br>
+	    <textarea ng-model="msg" cols="35" rows="5"> </textarea>
+	
+	     <br />
+	    <input ng-click="addData()" type="submit" />
+	
+	        
+	         <br><br>
+	          <ons-button ng-click="navi.pushPage('club-status/status2.html')">นัดหมายกิจกรรม</ons-button> 
+	        </div>
+	
+	    
+	  </ons-page>
+  </ons-navigator>
+ 
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  	<meta charset="utf-8">
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="mobile-web-app-capable" content="yes">
+  	<title>My App</title>  
+  
+  	<link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
+  	<link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">   
+  	<link rel="stylesheet" href="styles/app.css"/>
+
+  	<script src="lib/onsen/js/angular/angular.js"></script>  
+  	<script src="lib/onsen/js/angular/angular-route.js"></script>  
+  	<script src="lib/onsen/js/onsenui.js"></script>    
+  	<script src="cordova.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller/controller.js"></script>
+    <script src="js/controller/BookCtrl.js"></script>
+    <script src="js/controller/EbookCtrl.js"></script>
+    <script src="js/controller/EstimationCtrl.js"></script>
+    <script src="js/controller/ExamCtrl.js"></script>
+    <script src="js/controller/SearchBookCtrl.js"></script>
+    <script src="js/controller/NewsCtrl.js"></script>
+   <!-- <script src="js/controllernon.js"></script> -->
+    <script src="js/config.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/studentandclubcontroller.js"></script>
+    <script src="js/StudentOrganization.js"></script>
+    <script src="js/rulecontroller.js"></script>
+    <script src="js/contrl.js"></script>
+    <script src="js/statuscontroller.js"></script>
+    
+
+</head>
+
+<body ng-controller="NewsCtrl">    
+<ons-navigator title="Navigator" var="myNavigator">
+  	<ons-sliding-menu 
+  		menu-page="menu/menu_guest-user.html" 
+  		main-page="pages/views.html" 
+  		side="left"
+		var="MainMenu" 
+		type="reveal" 
+		max-slide-distance="260px" 
+		swipable="true">
+  	</ons-sliding-menu>    
+  </ons-navigator>
+</body>
+</html>
